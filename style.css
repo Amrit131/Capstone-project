@@ -1,5 +1,153 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@media screen and (max-width: 701px) and (min-width: 319px) {
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif, 'Times New Roman', Times, serif;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .hamburger-container {
+    width: 32px;
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1%;
+    left: 7%;
+  }
+
+  .bar {
+    width: 100%;
+    height: 5px;
+    background-color: #505050;
+    margin: 3px;
+  }
+
+  .close #bar1 {
+    transition: 0.3s ease;
+    transform: translateY(3px) rotate(45deg);
+    padding-right: -40px;
+  }
+
+  .close #bar2 {
+    display: none;
+  }
+
+  .close #bar3 {
+    transform: translateY(-8px) rotate(-45deg);
+    transition: 0.3s ease;
+  }
+}
+
+/* body {
+  font-family: 'Lato', sans-serif, 'Times New Roman', Times, serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+.navbar-container {
+  width: 100%;
+  height: 92px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 100px #272a313f;
+  position: fixed;
+}
+
+.navbar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.logo-container {
+  width: 30%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10%;
+}
+
+.logo-img {
+  width: 50px;
+  height: 45px;
+}
+
+.logo {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ec5242;
+  padding: 10px;
+}
+
+.logo span {
+  color: #272a31;
+  margin-right: 2%;
+}
+
+.navlinks-container {
+  width: 65%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5%;
+}
+
+.nav-links {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links .link {
+  font-size: 1rem;
+  font-weight: 700;
+  list-style: none;
+  margin: 3%;
+  color: #272a31;
+}
+
+.link a {
+  text-decoration: none;
+  color: #272a31;
+}
+
+.redlink {
+  font-size: 20px;
+  font-weight: 700;
+  list-style: none;
+  margin-left: 8%;
+  padding: 1%;
+  border: 3px solid #ec5242;
+}
+
+.redlink a {
+  text-decoration: none;
+  color: #ec5242;
+} */

@@ -6,10 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blue Radon</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image" href="assets/logo.png">
+    <link rel="icon" type="image" href="assets/images/logo.png">
 </head>
 <body>
-    
+    <header id="navbar-container" class="navbar-container">
+        <nav id="navbar" class="navbar">
+            <div class="logo-container">
+                <img src="/assets/images/logo.png" alt="" class="logo-img" id="logo-img">
+                <p class="logo"><span>BR</span>Blue Radon</p>
+            </div>
+            <div class="navlinks-container">
+                <ul class="nav-links">
+                    <li class="link"><a href="#">About</a></li>
+                    <li class="link"><a href="#">Program</a></li>
+                    <li class="link"><a href="#">Join</a></li>
+                    <li class="link"><a href="#">Sponsor</a></li>
+                    <li class="link"><a href="#">News</a></li>
+                    <li class="redlink" ><a href="#">CC Campaign</a></li>
+                </ul>
+            </div>
+        </nav>
+        <a class="hamburger-container" href="#" onclick="toggle()">
+            <span class="bar" id="bar1"></span>
+            <span class="bar" id="bar2"></span>
+            <span class="bar" id="bar3"></span>
+        </a>
+    </header>
     <script src="script.js"></script>
 </body>
 </html>

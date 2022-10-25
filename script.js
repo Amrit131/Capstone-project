@@ -8,3 +8,11 @@ function toggle() {
   close.classList.toggle('close');
   menu.classList.toggle('show');
 }
+
+const list = document.getElementsByClassName('list');
+for (let i = 0; i < list.length; i += 1) {
+  list[i].addEventListener('click', () => {
+    close.classList.remove('close');
+    menu.classList.remove('show');
+  });
+}

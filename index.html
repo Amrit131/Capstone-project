@@ -6,10 +6,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blue Radon</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image" href="assets/logo.png">
+    <link rel="icon" type="image" href="assets/images/logo.png">
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <header id="navbar-container" class="navbar-container">
+        <div class="sign-in">
+            <div class="container">
+                <img class="bar-logo" src="assets/images/facebook.png" alt="Facebook logo">
+                <img class="bar-logo" src="assets/images/twitter.png" alt="">
+                <a href="#"><span class="bar-text">English</span></a>
+                <a href="#"><span class="bar-text">Members</span></a>
+                <a href="#"><span class="bar-text">Logout</span></a>
+            </div>    
+        </div>
+        <nav id="navbar" class="navbar">
+            <a class="logo-container" href="index.html">
+                <img src="/assets/images/logo.png" alt="Logo of the company" class="logo-img" id="logo-img">
+                <p class="logo"><span>BR</span>Blue Radon</p>
+            </a>
+            <div class="navlinks-container">
+                <ul class="nav-links">
+                    <li class="link" id="about-link"><a href="/about.html">About</a></li>
+                    <li class="link"><a href="#">Program</a></li>
+                    <li class="link"><a href="#">Join</a></li>
+                    <li class="link"><a href="#">Sponsor</a></li>
+                    <li class="link"><a href="#">News</a></li>
+                    <li class="redlink" ><a href="#">CC Campaign</a></li>
+                </ul>
+            </div>
+        </nav>
+        <a class="hamburger-container" href="#" onclick="toggle()">
+            <span class="bar" id="bar1"></span>
+            <span class="bar" id="bar2"></span>
+            <span class="bar" id="bar3"></span>
+        </a>
+        <ul class="menu-list">
+            <li class="list"><a href="/about.html">About</a></li>
+            <li class="list"><a href="#">Program</a></li>
+            <li class="list"><a href="#">Join</a></li>
+            <li class="list"><a href="#">Sponsor</a></li>
+            <li class="list"><a href="#">News</a></li>
+            <li class="list" ><a href="#">CC Campaign</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="landing-page">
+            <div class="bg-container">
+                <div class="welcome-container"><p class="welcome">"Welcome! Heaven on Earth"</p></div>
+                <div class="heading-container"><h1 class="heading-1">Blue Radon Group</h1></div>
+                <div class="title-container"><p class="title">hotels & restaurants</p></div>
+                <div class="detail-container"><p class="detail">Comfortable rooms, Royal ambience and great hospitality with 3 michelin stars at your service forever.</p></div>
+                <div class="year-container"><h2 class="heading-2">2022.10.25(TUE) ~ 27(THU)</h2></div>
+                <div class="org-container"><p class="org-detail">@ Special event at Blue radon Hotel and more</p></div>
+            </div>
+        </section>
+        <section class="amenities-container">
+            <div class="amenities-heading">
+                <h2 class="main-amenities">Main Amenities</h2>
+                <span id="line"></span>
+            </div>
+            <div class="cards-container">
+                <div class="amenities-cards">
+                    <img src="assets/images/icons/tray.png" alt="Meal tray0">
+                    <p class="amenity">Meals</p>
+                    <p class="amenity-detail">Great mouth watering food to your table by our world famous chefs. All services under 50 minutes.</p>
+                </div>
+                <div class="amenities-cards">
+                    <img src="assets/images/icons/hotel.png" alt="Meal tray0">
+                    <p class="amenity">Hotels</p>
+                    <p class="amenity-detail">Royal feel hotels with ambience you have never seen. Best for tourists and couples. All hotels near famous tourist destinations. </p>
+                </div>
+                <div class="amenities-cards">
+                    <img src="assets/images/icons/chat.png" alt="Meal tray0">
+                    <p class="amenity">Contact</p>
+                    <p class="amenity-detail">Chat with us to book rooms or for inquiries and to know all services we can provide to make your day specail.</p>
+                </div>
+                <div class="amenities-cards">
+                    <img src="assets/images/icons/restaurant.png" alt="Meal tray0">
+                    <p class="amenity">Restaurants</p>
+                    <p class="amenity-detail">Word famous restaurants perfect for that date you have been planning. Pre-booking dine-in only</p>
+                </div>
+                <div class="amenities-cards">
+                    <img src="assets/images/icons/ferris.png" alt="Meal tray0">
+                    <p class="amenity">Leisure</p>
+                    <p class="amenity-detail">Many leisure activities like swimming and playing sections for your kids to keep them busy.</p>
+                </div>
+                <div class="all-services">
+                    <button type="button">See all Services</button>
+                </div>
+            </div>
+            <div class="see-container">
+                <p class="services"><a href="#">See all Services</a></p>
+            </div>
+        </section>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>

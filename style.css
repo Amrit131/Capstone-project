@@ -1,5 +1,1729 @@
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* stylelint-disable no-descending-specificity */
+/* stylelint-disable block-opening-brace-space-before */
+/* stylelint-disable csstree/validator */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* Mobile version */
+
+@media screen and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif, 'Times New Roman', Times, serif;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .sign-in {
+    display: none;
+  }
+
+  .hamburger-container {
+    width: 32px;
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 1%;
+    left: 7%;
+  }
+
+  .bar {
+    width: 100%;
+    height: 5px;
+    background-color: #676767;
+    margin: 3px;
+  }
+
+  .close #bar1 {
+    transition: 0.3s ease;
+    transform: translateY(3px) rotate(45deg);
+    padding-right: -40px;
+  }
+
+  .close #bar2 {
+    display: none;
+  }
+
+  .close #bar3 {
+    transform: translateY(-8px) rotate(-45deg);
+    transition: 0.3s ease;
+  }
+
+  .menu-list {
+    display: none;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding-left: 60px;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4vh;
+  }
+
+  .show {
+    display: flex;
+    background-color: #ec5242;
+  }
+
+  .list {
+    list-style: none;
+  }
+
+  .list a {
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 900;
+    color: #272a31;
+  }
+
+  .list a:hover {
+    color: #505050;
+  }
+
+  main {
+    width: 100%;
+    height: 100%;
+  }
+
+  .landing-page {
+    width: 100%;
+    height: 90vh;
+    background-image: url(assets/images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .bg-container {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: start;
+    margin-left: 5%;
+    margin-top: 170px;
+  }
+
+  .welcome-container {
+    width: 100%;
+  }
+
+  .welcome {
+    font-size: 23px;
+    color: #ec5242;
+    font-weight: 600;
+  }
+
+  .heading-container {
+    width: 100%;
+  }
+
+  .heading-1 {
+    font-size: 38px;
+    font-weight: bolder;
+    color: #ec5242;
+    background-image: url(https://png.pngtree.com/background/20210709/original/pngtree-red-china-pattern-shading-picture-image_930580.jpg);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    background-clip: none;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .title-container {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 30px;
+    font-weight: bolder;
+    color: #ec5242;
+    background-image: url(https://png.pngtree.com/background/20210709/original/pngtree-red-china-pattern-shading-picture-image_930580.jpg);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    background-clip: none;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .detail-container {
+    width: 90%;
+    height: auto;
+    border: 5px solid #fff;
+    background-color: #d3d3d3;
+    margin-top: 10px;
+    padding: 1rem;
+  }
+
+  .detail {
+    font-size: 16px;
+    font-weight: 500;
+    color: #272a31;
+  }
+
+  .year-container {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .heading-2 {
+    font-size: 24px;
+    font-weight: 900;
+    color: #272a31;
+  }
+
+  .org-container {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .org-detail {
+    font-size: 15px;
+    font-weight: 600;
+    color: #272a31;
+  }
+
+  .amenities-container {
+    background-image: url(assets/images/pattern_bg.png);
+    background-repeat: repeat;
+    background-color: #272a31;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .amenities-heading {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .main-amenities {
+    text-align: center;
+    width: 80%;
+    color: #fff;
+    letter-spacing: 2px;
+  }
+
+  #line {
+    width: 15%;
+    height: 2px;
+    margin-top: 20px;
+    background: #ec5242;
+    border-radius: 15px;
+  }
+
+  .cards-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .amenities-cards {
+    width: 93%;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    gap: 5%;
+    background-color: #9b9b9d25;
+    margin-top: 15px;
+    padding: 3%;
+  }
+
+  .amenities-cards img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .amenity {
+    color: #ec5242;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .amenity-detail {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .amenities-cards:hover {
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.5s ease-out;
+  }
+
+  .all-services {
+    width: 70%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+
+  .all-services button {
+    width: 80%;
+    height: 80%;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: #ec5242;
+    cursor: pointer;
+  }
+
+  .all-services button:hover {
+    color: #ec5242;
+    background-color: #fff;
+    border: 3px solid #ec5242;
+    border-radius: 5px;
+    transition: 0.4s ease;
+  }
+
+  .see-container {
+    display: none;
+  }
+
+  .black {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 15px;
+    font-weight: 700;
+    color: #272a31;
+    padding: 10px;
+  }
+
+  .black span {
+    color: #272a31;
+    margin-right: 2%;
+  }
+
+  .red {
+    font-size: 0.8rem;
+    font-weight: 700;
+    list-style: none;
+    margin: 3%;
+    color: #272a31;
+  }
+
+  .red a {
+    color: #ec5242;
+    text-decoration: none;
+  }
+
+  .about-bg-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    margin-top: 120px;
+  }
+
+  .about-landing-page {
+    width: 100%;
+    height: 100vh;
+    background-image: url(assets/images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-headign-container {
+    width: 95%;
+    text-align: center;
+  }
+
+  .about-heading-1 {
+    font-size: 35px;
+    font-weight: bolder;
+    color: #ec5242;
+    background-image: url(https://png.pngtree.com/background/20210709/original/pngtree-red-china-pattern-shading-picture-image_930580.jpg);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    background-clip: none;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+  }
+
+  .about-title-container {
+    width: 95%;
+    text-align: center;
+  }
+
+  .about-title {
+    font-size: 25px;
+    font-weight: bolder;
+    color: #ec5242;
+    background-image: url(https://png.pngtree.com/background/20210709/original/pngtree-red-china-pattern-shading-picture-image_930580.jpg);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    background-clip: none;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+  }
+
+  #line1 {
+    width: 20%;
+    height: 4px;
+    background-color: #ec5242;
+    border-radius: 10px;
+  }
+
+  .about-detail-container {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    margin-top: 50px;
+    padding: 1rem;
+    border: 1px solid #272a314a;
+    text-align: center;
+  }
+
+  .about-detail {
+    display: none;
+  }
+
+  .about-detail-1 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #676767;
+    line-height: 20px;
+    letter-spacing: 1px;
+  }
+
+  .about-year-container {
+    width: 80%;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .about-heading-2 {
+    font-size: 16px;
+    font-weight: 900;
+    color: #676767;
+  }
+
+  .about-org-container {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .about-org-detail {
+    font-size: 12px;
+    font-weight: 600;
+    color: #676767;
+  }
+
+  #line2 {
+    width: 40%;
+    height: 2px;
+    background-color: #676767;
+    margin-top: 5px;
+  }
+
+  .about-logo-page {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-logo-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .about-heading2-container {
+    width: 90%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .about-heading2 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #272a31;
+  }
+
+  #line3 {
+    width: 10%;
+    height: 4px;
+    background-color: #ec5242;
+    margin-bottom: 40px;
+  }
+
+  .about-detail2-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .about-detail2 {
+    display: none;
+  }
+
+  .about-detail3 {
+    font-size: 15px;
+    color: #505050;
+    font-weight: 500;
+  }
+
+  .logo-img-container {
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .logo-img-container img {
+    width: 65%;
+    height: 100%;
+    border: 2px solid black;
+    box-shadow: 0 0 30px #5b5e67fe;
+  }
+}
+
+/* Tablet Mode */
+
+@media screen and (min-width: 769px) and (max-width: 1018px) {
+  * {
+    font-family: 'Lato', sans-serif, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .navbar-container {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 100px #272a313f;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+  }
+
+  .sign-in {
+    width: 100%;
+    height: 40px;
+    background-color: #272a31;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2%;
+  }
+
+  .container a {
+    text-decoration: none;
+  }
+
+  .bar-text {
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .navbar {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .logo-container {
+    width: 20%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    text-decoration: none;
+  }
+
+  .logo-container:hover {
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    transform: scale(1.05);
+  }
+
+  .logo-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .logo {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ec5242;
+    padding: 10px;
+  }
+
+  .logo span {
+    color: #272a31;
+    margin-right: 2%;
+  }
+
+  .navlinks-container {
+    width: 60%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3%;
+  }
+
+  .nav-links {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-links .link {
+    font-size: 0.8rem;
+    font-weight: 700;
+    list-style: none;
+    margin: 3%;
+    color: #272a31;
+    transition: 0.5s ease;
+  }
+
+  .link a {
+    text-decoration: none;
+    color: #272a31;
+  }
+
+  .redlink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 25%;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 700;
+    list-style: none;
+    margin-left: 8%;
+    border: 3px solid #ec5242;
+  }
+
+  .redlink a {
+    height: 100%;
+    text-decoration: none;
+    color: #505050;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .redlink:hover {
+    background-color: #ec5242;
+    color: #fff;
+  }
+
+  .redlink a:hover {
+    color: #fff;
+  }
+
+  .link a:hover {
+    color: #505050;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  main {
+    width: 100%;
+    height: 100%;
+    margin-top: 110px;
+  }
+
+  .landing-page {
+    width: 100%;
+    height: 86vh;
+    background-image: url(assets/images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bg-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: start;
+  }
+
+  .welcome-container {
+    width: 80%;
+  }
+
+  .welcome {
+    font-size: 25px;
+    color: #ec5242;
+    font-weight: 600;
+  }
+
+  .heading-container {
+    width: 80%;
+  }
+
+  .heading-1 {
+    font-size: 45px;
+    font-weight: bolder;
+    color: #ec5242;
+    background-image: url(https://png.pngtree.com/background/20210709/original/pngtree-red-china-pattern-shading-picture-image_930580.jpg);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    background-clip: none;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .title-container {
+    width: 80%;
+  }
+
+  .title {
+    font-size: 35px;
+    font-weight: bolder;
+    color: #ec5242;
+    background-image: url(https://png.pngtree.com/background/20210709/original/pngtree-red-china-pattern-shading-picture-image_930580.jpg);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    background-clip: none;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .detail-container {
+    width: 60%;
+    height: auto;
+    border: 5px solid #fff;
+    background-color: #d3d3d3;
+    margin-top: 10px;
+    padding: 1rem;
+  }
+
+  .detail {
+    font-size: 16px;
+    font-weight: 500;
+    color: #272a31;
+  }
+
+  .year-container {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .heading-2 {
+    font-size: 35px;
+    font-weight: 900;
+    color: #272a31;
+  }
+
+  .org-container {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .org-detail {
+    font-size: 20px;
+    font-weight: 600;
+    color: #272a31;
+  }
+
+  .amenities-container {
+    background-image: url(assets/images/pattern_bg.png);
+    background-repeat: repeat;
+    background-color: #272a31;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .amenities-heading {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .main-amenities {
+    text-align: center;
+    width: 80%;
+    color: #fff;
+    letter-spacing: 2px;
+  }
+
+  #line {
+    width: 6%;
+    height: 2px;
+    margin-top: 20px;
+    background: #ec5242;
+    border-radius: 15px;
+  }
+
+  .cards-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    transition: 0.9s ease;
+  }
+
+  .amenities-cards {
+    width: 93%;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    gap: 5%;
+    background-color: #9b9b9d25;
+    margin-top: 15px;
+    padding: 3%;
+  }
+
+  .amenities-cards img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .amenity {
+    color: #ec5242;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .amenity-detail {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .amenities-cards:hover {
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.5s ease-out;
+  }
+
+  .all-services {
+    width: 70%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+
+  .all-services button {
+    width: 80%;
+    height: 80%;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #fff;
+    background-color: #ec5242;
+    cursor: pointer;
+  }
+
+  .all-services button:hover {
+    color: #ec5242;
+    background-color: #fff;
+    border: 3px solid #ec5242;
+    border-radius: 5px;
+    transition: 0.4s ease;
+  }
+
+  .see-container {
+    display: none;
+  }
+
+  .black {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 15px;
+    font-weight: 700;
+    color: #272a31;
+    padding: 10px;
+  }
+
+  .black span {
+    color: #272a31;
+    margin-right: 2%;
+  }
+
+  .red {
+    font-size: 0.8rem;
+    font-weight: 700;
+    list-style: none;
+    margin: 3%;
+    color: #272a31;
+  }
+
+  .red a {
+    color: #ec5242;
+    text-decoration: none;
+  }
+
+  .about-bg-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+  }
+
+  .about-landing-page {
+    width: 100%;
+    height: 86vh;
+    background-image: url(assets/images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-headign-container {
+    width: 70%;
+    text-align: center;
+  }
+
+  .about-heading-1 {
+    font-size: 55px;
+    font-weight: bolder;
+    color: #ec5242;
+    background-image: url(https://png.pngtree.com/background/20210709/original/pngtree-red-china-pattern-shading-picture-image_930580.jpg);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    background-clip: none;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+  }
+
+  .about-title-container {
+    width: 70%;
+    text-align: center;
+  }
+
+  .about-title {
+    font-size: 35px;
+    font-weight: bolder;
+    color: #ec5242;
+    background-image: url(https://png.pngtree.com/background/20210709/original/pngtree-red-china-pattern-shading-picture-image_930580.jpg);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    background-clip: none;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+  }
+
+  #line1 {
+    width: 20%;
+    height: 4px;
+    background-color: #ec5242;
+    border-radius: 10px;
+  }
+
+  .about-detail-container {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    margin-top: 50px;
+    padding: 1rem;
+    border: 1px solid #272a314a;
+  }
+
+  .about-detail {
+    font-size: 16px;
+    font-weight: 600;
+    color: #676767;
+    line-height: 20px;
+    letter-spacing: 1px;
+  }
+
+  .about-year-container {
+    width: 39%;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .about-heading-2 {
+    font-size: 20px;
+    font-weight: 900;
+    color: #676767;
+  }
+
+  .about-org-container {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .about-org-detail {
+    font-size: 12px;
+    font-weight: 600;
+    color: #676767;
+  }
+
+  #line2 {
+    width: 30%;
+    height: 2px;
+    background-color: #676767;
+    margin-top: 5px;
+  }
+
+  .about-logo-page {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-logo-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .about-heading2-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .about-heading2 {
+    font-size: 45px;
+    font-weight: 700;
+    color: #272a31;
+  }
+
+  #line3 {
+    width: 10%;
+    height: 4px;
+    background-color: #ec5242;
+    margin-bottom: 40px;
+  }
+
+  .about-detail2-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .about-detail2 {
+    font-size: 18px;
+    color: #505050;
+    font-weight: 500;
+  }
+
+  .about-detail3 {
+    display: none;
+  }
+
+  .logo-img-container {
+    width: 100%;
+    height: 30vh;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .logo-img-container img {
+    width: 55%;
+    height: 100%;
+    border: 2px solid black;
+    box-shadow: 0 0 30px #5b5e67fe;
+  }
+
+  .about-detail1 {
+    display: none;
+  }
+}
+
+/* Desktop Mode */
+
+@media screen and (min-width: 1019px) {
+  * {
+    font-family: 'Lato', sans-serif, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .navbar-container {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 100px #272a313f;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+  }
+
+  .sign-in {
+    width: 100%;
+    height: 40px;
+    background-color: #272a31;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2%;
+  }
+
+  .container a {
+    text-decoration: none;
+  }
+
+  .bar-text {
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .navbar {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .logo-container {
+    width: 20%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    text-decoration: none;
+  }
+
+  .logo-container:hover {
+    cursor: pointer;
+    transition: 1s ease-in-out;
+    transform: scale(1.05);
+  }
+
+  .logo-img {
+    width: 50px;
+    height: 45px;
+  }
+
+  .logo {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ec5242;
+    padding: 10px;
+  }
+
+  .logo span {
+    color: #272a31;
+    margin-right: 2%;
+  }
+
+  .navlinks-container {
+    width: 70%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5%;
+  }
+
+  .nav-links {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-links .link {
+    font-size: 1.1rem;
+    font-weight: 700;
+    list-style: none;
+    margin: 3%;
+    color: #272a31;
+    transition: 0.3s ease;
+  }
+
+  .link a {
+    text-decoration: none;
+    color: #272a31;
+  }
+
+  .redlink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 17%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 700;
+    list-style: none;
+    margin-left: 8%;
+    border: 3px solid #ec5242;
+  }
+
+  .redlink a {
+    height: 100%;
+    text-decoration: none;
+    color: #505050;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .redlink:hover {
+    background-color: #ec5242;
+    color: #fff;
+  }
+
+  .redlink a:hover {
+    color: #fff;
+  }
+
+  .link a:hover {
+    color: #505050;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  main {
+    width: 100%;
+    height: 100%;
+    margin-top: 110px;
+  }
+
+  .landing-page {
+    width: 100%;
+    height: 86vh;
+    background-image: url(assets/images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bg-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: start;
+  }
+
+  .welcome-container {
+    width: 66%;
+  }
+
+  .welcome {
+    font-size: 30px;
+    color: #ec5242;
+    font-weight: 600;
+  }
+
+  .heading-container {
+    width: 80%;
+  }
+
+  .heading-1 {
+    font-size: 55px;
+    font-weight: bolder;
+    color: #ec5242;
+    background-image: url(https://png.pngtree.com/background/20210709/original/pngtree-red-china-pattern-shading-picture-image_930580.jpg);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    background-clip: none;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .title-container {
+    width: 80%;
+  }
+
+  .title {
+    font-size: 45px;
+    font-weight: bolder;
+    color: #ec5242;
+    background-image: url(https://png.pngtree.com/background/20210709/original/pngtree-red-china-pattern-shading-picture-image_930580.jpg);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    background-clip: none;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .detail-container {
+    width: 60%;
+    height: auto;
+    border: 5px solid #fff;
+    background-color: #d3d3d3;
+    margin-top: 10px;
+    padding: 1rem;
+  }
+
+  .detail {
+    font-size: 20px;
+    font-weight: 500;
+    color: #272a31;
+  }
+
+  .year-container {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .heading-2 {
+    font-size: 35px;
+    font-weight: 900;
+    color: #272a31;
+  }
+
+  .org-container {
+    width: 80%;
+    margin-top: 5px;
+  }
+
+  .org-detail {
+    font-size: 22px;
+    font-weight: 600;
+    color: #272a31;
+  }
+
+  .amenities-container {
+    background-image: url(assets/images/pattern_bg.png);
+    background-repeat: repeat;
+    background-color: #272a31;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .amenities-heading {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .main-amenities {
+    text-align: center;
+    width: 80%;
+    color: #fff;
+    letter-spacing: 2px;
+  }
+
+  #line {
+    width: 5%;
+    height: 2px;
+    margin-top: 20px;
+    background: #ec5242;
+    border-radius: 15px;
+  }
+
+  .cards-container {
+    width: 95%;
+    height: 45vh;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-top: 40px;
+    transition: 0.9s ease;
+  }
+
+  .amenities-cards {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 5%;
+    background-color: #9b9b9d25;
+    margin-right: 15px;
+    padding: 2%;
+  }
+
+  .amenities-cards img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .amenity {
+    color: #ec5242;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .amenity-detail {
+    width: 100%;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+  }
+
+  .amenities-cards:hover {
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.5s ease-out;
+  }
+
+  .all-services {
+    display: none;
+  }
+
+  .see-container {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .services a{
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 2px solid #fff;
+  }
+
+  .services a:hover {
+    color: #ec5242;
+    border-bottom: 2px solid #ec5242;
+    transition: 0.5s ease;
+  }
+
+  .black {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 20px;
+    font-weight: 700;
+    color: #272a31;
+    padding: 10px;
+  }
+
+  .black span {
+    color: #272a31;
+    margin-right: 2%;
+  }
+
+  .red {
+    font-size: 1.1rem;
+    font-weight: 700;
+    list-style: none;
+    margin: 3%;
+    color: #272a31;
+  }
+
+  .red a {
+    color: #ec5242;
+    text-decoration: none;
+  }
+
+  .about-bg-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+  }
+
+  .about-landing-page {
+    width: 100%;
+    height: 86vh;
+    background-image: url(assets/images/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-headign-container {
+    width: 70%;
+    text-align: center;
+  }
+
+  .about-heading-1 {
+    font-size: 55px;
+    font-weight: bolder;
+    color: #ec5242;
+    background-image: url(https://png.pngtree.com/background/20210709/original/pngtree-red-china-pattern-shading-picture-image_930580.jpg);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    background-clip: none;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+  }
+
+  .about-title-container {
+    width: 70%;
+    text-align: center;
+  }
+
+  .about-title {
+    font-size: 45px;
+    font-weight: bolder;
+    color: #ec5242;
+    background-image: url(https://png.pngtree.com/background/20210709/original/pngtree-red-china-pattern-shading-picture-image_930580.jpg);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    background-clip: none;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+  }
+
+  #line1 {
+    width: 20%;
+    height: 4px;
+    background-color: #ec5242;
+    border-radius: 10px;
+  }
+
+  .about-detail-container {
+    width: 90%;
+    height: auto;
+    background-color: #fff;
+    margin-top: 50px;
+    padding: 1rem;
+    border: 1px solid #272a314a;
+  }
+
+  .about-detail {
+    font-size: 20px;
+    font-weight: 500;
+    color: #676767;
+  }
+
+  .about-year-container {
+    width: 35%;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .about-heading-2 {
+    font-size: 20px;
+    font-weight: 900;
+    color: #676767;
+  }
+
+  .about-org-container {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .about-org-detail {
+    font-size: 14px;
+    font-weight: 600;
+    color: #676767;
+  }
+
+  #line2 {
+    width: 25%;
+    height: 2px;
+    background-color: #676767;
+    margin-top: 5px;
+  }
+
+  .about-logo-page {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-logo-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .about-heading2-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .about-heading2 {
+    font-size: 45px;
+    font-weight: 700;
+    color: #272a31;
+  }
+
+  #line3 {
+    width: 10%;
+    height: 4px;
+    background-color: #ec5242;
+    margin-bottom: 40px;
+  }
+
+  .about-detail2-container {
+    width: 75%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .about-detail2 {
+    font-size: 18px;
+    color: #505050;
+    font-weight: 500;
+  }
+
+  .logo-img-container {
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .logo-img-container img {
+    width: 55%;
+    height: 100%;
+    border: 2px solid black;
+  }
+
+  .about-detail3 {
+    display: none;
+  }
 }

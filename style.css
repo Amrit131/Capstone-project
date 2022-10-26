@@ -11,6 +11,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif, 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
   }
 
   .navbar {
@@ -548,7 +549,7 @@
 
   .partner-heading-container {
     width: 100%;
-    margin-top: 40px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -575,6 +576,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 30px;
+    margin-bottom: 40px;
   }
 
   .partner {
@@ -766,6 +768,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
 
   .navbar-container {
@@ -1054,7 +1057,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 140px;
   }
 
   .main-amenities {
@@ -1073,16 +1076,15 @@
   }
 
   .cards-container {
-    width: 100%;
+    width: 98%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-left: 20px;
     margin-bottom: 20px;
     transition: 0.9s ease;
   }
 
   .amenities-cards {
-    width: 93%;
+    width: 95%;
     height: 20vh;
     display: flex;
     flex-direction: row;
@@ -1583,6 +1585,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
 
   .navbar-container {
@@ -1872,7 +1875,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 140px;
   }
 
   .main-amenities {
@@ -1948,6 +1951,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 40px;
   }
 
   .services a{

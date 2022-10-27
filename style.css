@@ -1868,6 +1868,10 @@
   .cards-btn-container {
     display: none;
   }
+
+  .about-detail-1 {
+    display: none;
+  }
 }
 
 /* Desktop Mode */
@@ -2791,6 +2795,10 @@
   }
 
   .cards-btn-container {
+    display: none;
+  }
+
+  .about-detail-1 {
     display: none;
   }
 }

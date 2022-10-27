@@ -1,6 +1,6 @@
 # Blue Radon Website
 
-- This is the repository for the first capstone project I made while completing Microverse program. It is a hotel webstie for a hotel called Blue Radon.
+- This is the repository for the first capstone project I made while completing Microverse program. It is a webstie for a hotel group called Blue Radon.
 
 
 ## Built With
@@ -9,30 +9,28 @@
 - Bootstrap
 - Github, Git
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://livedemo.com)
-
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+[Live Demo Link](https://amrit131.github.io/Capstone-project/)
 
 
-To get a local copy up and running follow these simple example steps.
+## Design Credit 
+
+- Original design idea by [Cindy Shin in Behance.](https://www.behance.net/adagio07)
+
+## To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+Please make sure you are up to date if you have been working on this project. If you are new just simply clone the repository.
 
 ### Setup
+There is no specific setup needed for this project. You will just need to clone the repository and then work on the project.
 
 ### Install
+Ther are no specific installations needed for this project apart from your code editor and git bash.
 
 ### Usage
-
-### Run tests
-
-### Deployment
+Anyone can use this project by giving proper credit.
 
 
 
@@ -40,15 +38,10 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/Amrit131)
+- Twitter: [@twitterhandle](https://twitter.com/i_ammrit)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mishra-amrit/)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
@@ -70,4 +63,3 @@ Give a ⭐️ if you like this project!
 
 This project is [MIT](./LICENSE) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
